@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="66655" started-at="2020-04-24T02:57:13Z" finished-at="2020-04-24T02:58:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="66655" started-at="2020-04-24T02:57:13Z" finished-at="2020-04-24T02:58:20Z">
+      <class name="com.regression.CNN_Testing">
+        <test-method status="PASS" signature="setup1()[pri:0, instance:com.regression.CNN_Testing@146ba0ac]" name="setup1" is-config="true" duration-ms="20357" started-at="2020-04-24T02:57:13Z" finished-at="2020-04-24T02:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup1 -->
+        <test-method status="PASS" signature="Market_03()[pri:0, instance:com.regression.CNN_Testing@146ba0ac]" name="Market_03" duration-ms="5" started-at="2020-04-24T02:57:34Z" finished-at="2020-04-24T02:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Market_03 -->
+        <test-method status="PASS" signature="Market_04()[pri:0, instance:com.regression.CNN_Testing@146ba0ac]" name="Market_04" duration-ms="1" started-at="2020-04-24T02:57:34Z" finished-at="2020-04-24T02:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Market_04 -->
+        <test-method status="PASS" signature="pageTitle_02()[pri:0, instance:com.regression.CNN_Testing@146ba0ac]" name="pageTitle_02" duration-ms="46243" started-at="2020-04-24T02:57:34Z" finished-at="2020-04-24T02:58:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageTitle_02 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.regression.CNN_Testing@146ba0ac]" name="teardown" is-config="true" duration-ms="1" started-at="2020-04-24T02:58:20Z" finished-at="2020-04-24T02:58:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.regression.CNN_Testing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
