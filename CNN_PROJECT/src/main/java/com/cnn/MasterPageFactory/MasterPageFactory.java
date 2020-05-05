@@ -17,12 +17,15 @@ public class MasterPageFactory {
 		
 		public List<WebElement> getAllPageName() {
 		return allPageName;
-	}
-		@FindBy(xpath ="(//*[@class='sc-htoDjs dpodOf'])[1]//a")
-		private List<WebElement> allpage;
 		
-	@FindBy(xpath="//*[contains(@class,'ticker-name-change')]")
-	private List<WebElement>topSecurityNameAndValue;
+		
+	}
+		//@FindBy(xpath ="(//*[@class='sc-htoDjs dpodOf'])[1]//a")
+		//private List<WebElement> allpage;
+		
+		
+	   @FindBy(xpath="//*[contains(@class,'ticker-name-change')]")
+	 private List<WebElement>topSecurityNameAndValue;
 	
 		
 		public List<WebElement> getTopSecurityNameAndValue() {
@@ -30,13 +33,43 @@ public class MasterPageFactory {
 	}
 		
 		
-		@FindBy(xpath ="//*[contains(@class,'logo')]")
-		private List<WebElement> pagelogo;
+		//@FindBy(xpath ="//*[contains(@class,'logo')]")
+		//private List<WebElement> pagelogo;
 		//*[@class='stock']
+		
 		@FindBy(xpath ="//*[@class='module-body wsod most-popular-stocks']//a")
 		private List<WebElement> mostPopularStock;
 		
+		public List<WebElement> getMostPopularStock() {
+			return mostPopularStock;
+		}
 		
+		
+		 @FindBy(xpath ="//*[name()='g']//*[name()='text'][2]")
+		 private List<WebElement> sectorformanceBarName;
+		 
+		 public List<WebElement> getSectorformanceBarName() {
+				return sectorformanceBarName;
+			}
+		 
+		 @FindBy(xpath ="//*[name()='g']//*[@class='pct-change negative']")
+			private List<WebElement> sectorformanceBarValues;
+		 
+		 public List<WebElement> getSectorformanceBarValues() {
+				return sectorformanceBarValues;
+			}
+		 
+
+			@FindBy(xpath ="//*[@class='module-body wsod losers']//li")
+			private List<WebElement> losserSectionValues;
+			
+			
+			public List<WebElement> getLosserSectionValues() {
+				return losserSectionValues;
+			}
+
+			
+			
 		
 		@FindBy(xpath ="//*[@class='module-body wsod key-stats' or @class='module-body wsod commodities']//*[@class='quote']")
 		private List<WebElement> KeyStartsAndCommodities;
@@ -45,39 +78,21 @@ public class MasterPageFactory {
 			return KeyStartsAndCommodities;
 		}
 
-		@FindBy(xpath ="//*[name()='g']//*[@class='pct-change negative']")
-		private List<WebElement> sectorformanceBarValues;
 		
-		@FindBy(xpath ="//*[name()='g']//*[name()='text'][2]")
-		private List<WebElement> sectorformanceBarName;
-		
-		@FindBy(xpath ="//*[@class='module-body wsod losers']//li")
-		private List<WebElement> losserSectionValues;
+	   
 		
 		
-		public List<WebElement> getLosserSectionValues() {
-			return losserSectionValues;
-		}
+		
 
-		public List<WebElement> getSectorformanceBarName() {
-			return sectorformanceBarName;
-		}
+		
 
-		public List<WebElement> getSectorformanceBarValues() {
-			return sectorformanceBarValues;
-		}
+		//public List<WebElement> getPagelogo() {
+		//	return pagelogo;
+		//}
 
-		public List<WebElement> getMostPopularStock() {
-			return mostPopularStock;
-		}
-
-		public List<WebElement> getPagelogo() {
-			return pagelogo;
-		}
-
-		public List<WebElement> getAllpage() {
-			return allpage;
-		}
+		//public List<WebElement> getAllpage() {
+			//return allpage;
+		//}
 
 		
 			

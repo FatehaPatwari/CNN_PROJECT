@@ -5,8 +5,10 @@
     <classes>
       <class name="com.regression.CNN_Testing">
         <methods>
+          <include name="Market_04"/>
           <include name="pageTitle_02"/>
           <include name="teardown"/>
+          <include name="Market_03"/>
           <include name="setup1"/>
         </methods>
       </class> <!-- com.regression.CNN_Testing -->

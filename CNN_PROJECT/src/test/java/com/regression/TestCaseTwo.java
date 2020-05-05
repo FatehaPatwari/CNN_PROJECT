@@ -19,19 +19,19 @@ public class TestCaseTwo {
 		
 		//List<WebElement> allPages = driver.findElements(By.xpath("(//*[@class='sc-htoDjs dpodOf'])[1]//li"));
 		    // pf.getAllpage();
-		ExplicitWait.getMyWait(driver, pf.getAllpage().get(0));
+		ExplicitWait.getMyWait(driver, pf.getAllPageName().get(0));
 		
-		for (int i = 0; i <pf.getAllpage().size(); i++) {
+		for (int i = 0; i <pf.getAllPageName().size(); i++) {
 
 			while (true) {// never stop===> infinite time
 				//allPages = driver.findElements(By.xpath("(//*[@class='sc-htoDjs dpodOf'])[1]//li"));
 				//pf.getAllpage();
 
-				if (pf.getAllpage().size()> 0) {
-					HighLighter.getColor(driver, pf.getAllpage().get(i), "green");
-					String pageName = pf.getAllpage().get(i).getText();
-					ExplicitWait.getMyWait(driver, pf.getAllpage().get(i));
-					pf.getAllpage().get(i).click();// ...............................................................Click
+				if (pf.getAllPageName().size()> 0) {
+					HighLighter.getColor(driver, pf.getAllPageName().get(i), "green");
+					String pageName = pf.getAllPageName().get(i).getText();
+					ExplicitWait.getMyWait(driver, pf.getAllPageName().get(i));
+					pf.getAllPageName().get(i).click();// ...............................................................Click
 					System.out.println("Click here.............");
 				
 					// wait...............for market
